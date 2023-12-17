@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGN IN-UP-Figma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="https://static.figma.com/app/icon/1/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <nav>
+          <div class="container">
+            <div class="by-trend">
+              <img src="../images/logo-1.png" alt="logo" />
+              <div class="nav-link">
+                <div class="pages">
+                  <a href="#" class="link-1">Services</a>
+                  <a href="#" class="link-1">About</a>
+                  <a href="#" class="link-1">Contacts</a>
+                </div>
+                <div class="buttons">
+                  <a href="./register.html" class="btn-1"
+                    ><button>Log in</button></a
+                  >
+                  <a href="../index.html" class="btn-1"
+                    ><button>Open an account</button></a
+                  >
+                  <form>
+                    <select name="language" id="language">
+                      <option value="En">En</option>
+                      <option value="Ru">Ru</option>
+                      <option value="Uz">Uz</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="continue-page">
+            <div class="login">
+              <img src="../images/logo-1.png" alt="logo" class="logo-1" />
+              <p class="prg-2">Welcome to ByTrend!</p>
+              <p>
+                Already have an account?
+                <span>
+                  <a href="./register.html" class="link-login">Log in</a>
+                </span>
+              </p>
+              <form>
+                <div class="email">
+                  <label for="email">Email <span>*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email "
+                    placeholder="
+          qosimovrahmonjon0927@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="email phone">
+                  <label for="phone">Phone <span>*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone "
+                    placeholder="
+      +998976676868"
+                    required
+                    pattern="^\+998(33|55|77|88|9\d{1})(\d{7})$"
+                  />
+                </div>
+                <div class="conutry-city">
+                  <div class="conutry">
+                    <label for="country"> Country <span>*</span></label>
+                    <select name="country" id="country" required>
+                      <option value="Russia">Russia</option>
+                      <option value="Uzbek">Uzbekistan</option>
+                      <option value="America">America</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="France">France</option>
+                      <option value="England">England</option>
+                    </select>
+                  </div>
+                  <div class="city">
+                    <label for="city">City </label>
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      placeholder="Name of the city"
+                    />
+                  </div>
+                </div>
+                <div class="password">
+                  <div class="secret">
+                    <label for="password"
+                      >Password <span>*</span>
+                      <svg
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_14_0)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.718323 6.64207C0.718323 10.2887 3.84129 13.245 7.69367 13.245C11.5461 13.245 14.669 10.2887 14.669 6.64207C14.669 2.9954 11.5461 0.0391846 7.69367 0.0391846C3.84129 0.0391846 0.718323 2.9954 0.718323 6.64207ZM2.11339 6.64207C2.11339 3.72473 4.61177 1.35976 7.69367 1.35976C10.7756 1.35976 13.274 3.72473 13.274 6.64207C13.274 9.55941 10.7756 11.9244 7.69367 11.9244C4.61177 11.9244 2.11339 9.55941 2.11339 6.64207ZM8.07564 7.34594C8.03658 7.58628 7.8315 7.79889 7.5483 7.79889H7.47018C7.18698 7.79889 6.98191 7.59553 6.94284 7.34594L6.84519 6.71734C6.79636 6.41229 6.98191 6.19968 7.2944 6.1627C8.144 6.06102 8.53462 5.81143 8.53462 5.35847V5.33998C8.53462 4.924 8.20259 4.68365 7.63619 4.68365C7.21628 4.68365 6.85495 4.80383 6.5034 5.05341C6.38621 5.13661 6.22996 5.20132 6.06395 5.20132C5.69286 5.20132 5.38036 4.90551 5.38036 4.55424C5.38036 4.3786 5.45849 4.19372 5.63427 4.05506C6.15184 3.64832 6.80613 3.38949 7.66549 3.38949C9.07172 3.38949 10.0287 4.07355 10.0287 5.303V5.32149C10.0287 6.49548 9.16938 6.97617 8.10494 7.17954L8.07564 7.34594ZM6.62058 9.21323V9.19474C6.62058 8.75103 6.98191 8.409 7.47018 8.409C7.95845 8.409 8.31978 8.75103 8.31978 9.19474V9.21323C8.31978 9.65695 7.95845 9.99898 7.47018 9.99898C6.98191 9.99898 6.62058 9.65695 6.62058 9.21323Z"
+                            fill="black"
+                            fill-opacity="0.6"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_14_0">
+                            <rect
+                              width="15.9437"
+                              height="15.0923"
+                              fill="white"
+                              transform="translate(0.718323 0.0391846)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </label>
+                    <input
+                      required
+                      type="password"
+                      name="password"
+                      id="password"
+                    />
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                  </div>
+                </div>
+                <div class="Coniform-password">
+                  <label for="password">Confirm password <span>*</span></label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    name="password "
+                    required
+                  />
+                </div>
+              </form>
+              <a href="../index.html" class="btn-8">
+                <button type="submit" class="btn-continue">Register</button>
+              </a>
+
+              <p class="prg-5">
+                By signing up, you are agreeing to our
+                <span>Terms & Conditions</span> and
+                <span>Privacy Policy</span> .
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
